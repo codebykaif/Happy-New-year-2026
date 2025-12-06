@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="wrap" role="main">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>NY26</div>
+        <div>
+          <div style="font-weight:800">Happy New Year</div>
+          <div style="font-size:12px;color:var(--muted)">Welcome 2026 — make it brilliant</div>
+        </div>
+      </div>
+      <div aria-hidden style="color:var(--muted)">🎆 2026 • Crafted with HTML & CSS</div>
+    </header>
+
+    <section class="hero" aria-label="New Year hero">
+      <div class="hero-content">
+        <h1 class="headline-anim">Happy New Year <span style="color:var(--accent)">2026</span> 🎉</h1>
+        <p class="lead">“May the New Year bring you peace, joy, and happiness.” “Wishing you and your family a year brimming with good health, wealth, and happiness!” “May the new year bring you warmth, love, and light to guide your path to a positive destination.” “May you have a prosperous New Year</p>
+
+        <div class="cta-row">
+          <button class="btn btn--primary" id="launchFireworks">Light Fireworks</button>
+          <button class="btn btn--ghost" id="toggleConfetti">Toggle Confetti</button>
+          <button class="btn btn--ghost" id="shareBtn">Share</button>
+        </div>
+
+        <div class="countdown" aria-live="polite" aria-atomic="true" id="countdown">
+          <div class="digit"><strong id="days">0</strong><span>Days</span></div>
+          <div class="digit"><strong id="hours">0</strong><span>Hours</span></div>
+          <div class="digit"><strong id="mins">0</strong><span>Minutes</span></div>
+          <div class="digit"><strong id="secs">0</strong><span>Seconds</span></div>
+        </div>
+
+      </div>
+
+      <div class="scene" aria-hidden="true">
+        <canvas id="bgCanvas"></canvas>
+        <canvas id="fireworksCanvas"></canvas>
+        <div class="overlay-graphic">
+          <!-- subtle SVG skyline (scales) -->
+          <svg viewBox="0 0 1000 200" preserveAspectRatio="none" style="position:absolute;left:0;right:0;bottom:0;height:40%;width:110%;opacity:0.35;transform:translateX(-5%)">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#07203a" stop-opacity="0.6"/><stop offset="1" stop-color="#043a5a" stop-opacity="0.2"/></linearGradient>
+            </defs>
+            <path d="M0 160 L60 120 L120 140 L180 90 L240 130 L300 80 L360 140 L420 100 L480 150 L540 120 L600 160 L660 110 L720 150 L780 100 L840 140 L900 90 L960 130 L1000 160 L1000 200 L0 200 Z" fill="url(#g1)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cards">
+        <div class="card">
+          <h3 style="margin:0 0 6px">Celebration Effects</h3>
+          <p style="margin:0;color:var(--muted)">“Stunning fireworks & glowing animations bring life to the screen.”
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px">Clean & Responsive</h3>
+          <p style="margin:0;color:var(--muted)">“Every device par smooth experience with modern layout & fluid design.”</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px">Smooth Performance</h3>
+          <p style="margin:0;color:var(--muted)">“Optimized animations that run fast on all browsers.”</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Made with ❤️ — 2026</div>
+      <div style="color:var(--muted)">Tip: Press <kbd style="background:#0b2b3a;padding:3px 6px;border-radius:6px">L</kbd> to launch fireworks</div>
+    </footer>
+  </div>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
